@@ -8,57 +8,35 @@ const categories = ["Todos", "Web Apps", "E-commerce", "Mobile", "Dashboards"];
 const projects = [
   {
     id: 1,
-    title: "Dashboard Analytics Pro",
-    description: "Panel de control empresarial con visualizaciones de datos en tiempo real y métricas avanzadas.",
-    image: "https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBkZXNpZ258ZW58MXx8fHwxNzY5NTAwMTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    category: "Dashboards",
-    technologies: ["React", "TypeScript", "Recharts", "Tailwind"],
+    title: "PrixRD",
+    description: "Sistema Integral de Gestión Técnico Vehicular en la República Dominicana. Diseño UI/UX completo con prototipo interactivo.",
+    image: "https://images.unsplash.com/vector-1773083145742-fa8a92d4bf99?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Web Apps",
+    technologies: ["Figma", "UI Design", "Prototype"],
     gradient: "bg-gradient-to-br from-purple-500 to-purple-700",
+    figmaLink: "https://www.figma.com/proto/cTzZmX2jt6nplHZJvbJpXT/PRIXRD?node-id=48-36&p=f&t=KpTZgnIoSfFIpA56-1&scaling=scale-down&content-scaling=responsive&page-id=0%3A1&starting-point-node-id=48%3A36",
   },
   {
     id: 2,
-    title: "EcoShop Platform",
-    description: "Plataforma de e-commerce sostenible con sistema de pagos integrado y gestión de inventario.",
-    image: "https://images.unsplash.com/photo-1650373773073-a8920f3edf34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZ3JlZW58ZW58MXx8fHwxNzY5NTE5NDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "The Revenge - Ecommerce",
+    description: "Plataforma web de e-commerce con sistema de autenticación y login. Diseño moderno con frontend funcional.",
+    image: "https://images.unsplash.com/vector-1773080421722-dffbc045b35b?q=80&w=1116&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "E-commerce",
-    technologies: ["Next.js", "Stripe", "PostgreSQL", "Framer Motion"],
+    technologies: ["Figma", "JavaScript", "CSS", "HTML"],
     gradient: "bg-gradient-to-br from-green-500 to-green-700",
+    figmaLink: "https://www.figma.com/proto/EJcCoPokH83v0Vy0isdN3L/Ecommerce---The-Revenge---Front-de-Autenticaci%C3%B3n?node-id=232-479&p=f&t=obZhLaA7TZE2pQXt-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=232%3A479",
+    githubLink: "https://github.com/IDS326-Construccion-de-Software/ago-oct-pf-ecommerce-frontend.git",
   },
   {
     id: 3,
-    title: "Creative Portfolio Hub",
-    description: "Sitio web de portafolio interactivo para artistas y diseñadores con galería dinámica.",
-    image: "https://images.unsplash.com/photo-1720293049481-c0299876d90f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHBvcnRmb2xpbyUyMHdlYnNpdGV8ZW58MXx8fHwxNzY5NDgxMzIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "BioMuestra - Gestión de Muestras de Alimentos",
+    description: "Sistema web para la gestión de muestras de alimentos con interfaz intuitiva y flujos de trabajo optimizados.",
+    image: "https://images.unsplash.com/vector-1773080244379-bf4ec79eba65?q=80&w=1116&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Web Apps",
-    technologies: ["React", "Three.js", "GSAP", "CSS3"],
-    gradient: "bg-gradient-to-br from-purple-500 to-pink-500",
-  },
-  {
-    id: 4,
-    title: "FitTrack Mobile",
-    description: "Aplicación móvil para seguimiento de fitness con planes personalizados y estadísticas detalladas.",
-    image: "https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY5NDc3NjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    category: "Mobile",
-    technologies: ["React Native", "Firebase", "Redux", "Expo"],
-    gradient: "bg-gradient-to-br from-green-500 to-teal-500",
-  },
-  {
-    id: 5,
-    title: "SocialConnect App",
-    description: "Red social innovadora con funciones de mensajería en tiempo real y contenido multimedia.",
-    image: "https://images.unsplash.com/photo-1710870509663-16f20f75d758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGFwcCUyMGludGVyZmFjZXxlbnwxfHx8fDE3Njk0OTI2ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    category: "Web Apps",
-    technologies: ["Vue.js", "Socket.io", "Node.js", "MongoDB"],
-    gradient: "bg-gradient-to-br from-purple-600 to-indigo-600",
-  },
-  {
-    id: 6,
-    title: "Modern Web Studio",
-    description: "Sitio web corporativo con diseño moderno, animaciones fluidas y optimización SEO.",
-    image: "https://images.unsplash.com/photo-1762716514229-739f6769e282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ24lMjBwdXJwbGV8ZW58MXx8fHwxNzY5NTE5NDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    category: "Web Apps",
-    technologies: ["Astro", "React", "Tailwind", "Vercel"],
+    technologies: ["Figma", "JavaScript", "UI Design"],
     gradient: "bg-gradient-to-br from-violet-500 to-purple-700",
+    figmaLink: "https://www.figma.com/proto/SdEy2tTyOdVf4r39BCkLp6/Frontend-del-sistema-de-gestion-de-muestras-de-alimentos?node-id=2015-455&p=f&t=ieUUJraqCnTuasxf-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2015%3A455",
+    githubLink: "https://github.com/WebDevGroup6",
   },
 ];
 
@@ -71,21 +49,30 @@ export default function App() {
       : projects.filter((project) => project.category === selectedCategory);
 
   const skills = [
-    { name: "Diseño UI/UX", level: 75, icon: Palette, color: "from-purple-500 to-purple-600" },
-    { name: "Desarrollo Frontend", level: 80, icon: Code2, color: "from-green-500 to-green-600" },
-    { name: "Aprendizaje Rápido", level: 95, icon: Zap, color: "from-purple-500 to-green-500" },
-    { name: "Trabajo en Equipo", level: 85, icon: Users, color: "from-green-500 to-teal-500" },
+    { name: "UX/UI Design", icon: Palette, color: "from-purple-500 to-purple-600" },
+    { name: "Frontend Development", icon: Code2, color: "from-green-500 to-green-600" },
+    { name: "Requirements Engineering", icon: Target, color: "from-purple-500 to-green-500" },
+    { name: "User Research", icon: Users, color: "from-green-500 to-teal-500" },
+    { name: "Wireframing & Prototyping", icon: Sparkles, color: "from-violet-500 to-purple-600" },
+    { name: "Information Architecture", icon: Zap, color: "from-teal-500 to-green-500" },
+    { name: "Agile / Scrum", icon: Award, color: "from-green-500 to-emerald-600" },
+    { name: "Problem Solving", icon: Code2, color: "from-purple-600 to-violet-600" },
+    { name: "Trabajo en Equipo", icon: Users, color: "from-green-500 to-teal-500" },
+    { name: "Aprendizaje Rápido", icon: Zap, color: "from-purple-500 to-green-500" },
   ];
 
   const languages = [
-    { name: "JavaScript", level: 95, color: "bg-yellow-400" },
-    { name: "TypeScript", level: 90, color: "bg-blue-500" },
-    { name: "React", level: 98, color: "bg-cyan-400" },
-    { name: "HTML/CSS", level: 97, color: "bg-orange-500" },
-    { name: "Node.js", level: 85, color: "bg-green-500" },
-    { name: "Python", level: 80, color: "bg-blue-600" },
-    { name: "Next.js", level: 92, color: "bg-black" },
-    { name: "Tailwind CSS", level: 96, color: "bg-teal-400" },
+    { name: "JavaScript", color: "bg-yellow-400" },
+    { name: "TypeScript", color: "bg-blue-500" },
+    { name: "React", color: "bg-cyan-400" },
+    { name: "HTML/CSS", color: "bg-orange-500" },
+    { name: "Node.js", color: "bg-green-500" },
+    { name: "Python", color: "bg-blue-600" },
+    { name: "Next.js", color: "bg-slate-400" },
+    { name: "Tailwind CSS", color: "bg-teal-400" },
+    { name: "MySQL", color: "bg-orange-400" },
+    { name: "C#", color: "bg-purple-500" },
+    { name: "C++", color: "bg-blue-700" },
   ];
 
   return (
@@ -106,28 +93,32 @@ export default function App() {
                   <Code2 className="h-6 w-6 text-white" />
                 </div>
                 <h1 className="bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent">
-                  Frontend Developer
+                  Ámbar Tiburcio
                 </h1>
               </div>
-              <p className="text-gray-400">Creando experiencias web excepcionales</p>
+              <p className="text-gray-400"></p>
             </div>
 
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="mailto:ambarlucia2707@gmail.com"
                 className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 px-6 py-3 text-white shadow-lg shadow-purple-500/50 transition-all hover:scale-105 hover:shadow-xl hover:shadow-purple-500/50"
               >
                 <Mail className="h-4 w-4" />
                 Contacto
               </a>
               <a
-                href="#"
+                href="https://github.com/ambar111"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border-2 border-gray-700 bg-slate-800 p-3 transition-all hover:border-purple-400 hover:bg-slate-700"
               >
                 <Github className="h-5 w-5 text-gray-300" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ámbar-lucía-tiburcio-ynoa-559281291/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border-2 border-gray-700 bg-slate-800 p-3 transition-all hover:border-green-400 hover:bg-slate-700"
               >
                 <Linkedin className="h-5 w-5 text-gray-300" />
@@ -155,7 +146,7 @@ export default function App() {
                 <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-purple-500 to-green-500 opacity-30 blur-2xl" />
                 <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-purple-500/30 shadow-2xl shadow-purple-500/20">
                   <img
-                    src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3Njk0NzQ1NDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/perfil.jpeg"
                     alt="Perfil"
                     className="h-full w-full object-cover"
                   />
@@ -190,19 +181,19 @@ export default function App() {
                 </div>
                 
                 <h2 className="mb-4 bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-4xl text-transparent">
-                  Hola, Soy Developer
+                  Hola, Soy Ámbar Lucía
                 </h2>
                 
                 <p className="mb-6 text-gray-300 leading-relaxed">
-                  Soy estudiante de desarrollo web apasionado por crear experiencias digitales 
-                  innovadoras y funcionales. Actualmente terminando mi formación universitaria, 
-                  me dedico a aprender y aplicar las últimas tecnologías del ecosistema frontend.
+                  Soy estudiante de Ingeniería en Software en INTEC (Instituto Tecnológico de Santo Domingo), enfocado en el diseño y 
+                  desarrollo de productos digitales centrados en el usuario. Me interesa transformar necesidades y requerimientos en 
+                  soluciones claras, funcionales y bien estructuradas.
                 </p>
                 
                 <p className="mb-8 text-gray-300 leading-relaxed">
-                  Mi enfoque está en construir interfaces modernas y responsivas que combinen 
-                  diseño atractivo con código limpio. Busco constantemente mejorar mis habilidades 
-                  a través de proyectos personales y académicos que desafíen mis capacidades.
+                  Mi enfoque combina UX/UI Design y desarrollo Frontend, creando interfaces modernas, intuitivas y responsivas que 
+                  equilibran diseño visual, usabilidad y código limpio. A través de proyectos académicos y personales, busco 
+                  construir experiencias digitales que no solo se vean bien, sino que realmente resuelvan problemas reales.
                 </p>
 
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -220,7 +211,7 @@ export default function App() {
                   </div>
                   <div className="rounded-xl bg-slate-800 border border-purple-500/30 p-4 shadow-lg shadow-purple-500/10">
                     <p className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent">
-                      2025
+                      2027
                     </p>
                     <p className="text-sm text-gray-400">Graduación</p>
                   </div>
@@ -253,36 +244,22 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.name}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                whileHover={{ y: -5 }}
                 className="group relative overflow-hidden rounded-2xl bg-slate-800 border border-purple-500/20 p-6 shadow-lg shadow-purple-500/10 transition-all hover:shadow-xl hover:shadow-purple-500/20 hover:border-purple-500/40"
               >
-                <div className="mb-4 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className={`rounded-lg bg-gradient-to-br ${skill.color} p-3 shadow-lg`}>
-                      <skill.icon className="h-6 w-6 text-white" />
-                    </div>
-                    <h3 className="text-white">{skill.name}</h3>
+                <div className="flex items-center gap-3">
+                  <div className={`rounded-lg bg-gradient-to-br ${skill.color} p-3 shadow-lg`}>
+                    <skill.icon className="h-6 w-6 text-white" />
                   </div>
-                  <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent">
-                    {skill.level}%
-                  </span>
-                </div>
-                
-                <div className="relative h-3 overflow-hidden rounded-full bg-gray-700">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: index * 0.1 + 0.3 }}
-                    className={`h-full rounded-full bg-gradient-to-r ${skill.color} shadow-lg`}
-                  />
+                  <h3 className="text-white text-sm font-semibold">{skill.name}</h3>
                 </div>
               </motion.div>
             ))}
@@ -312,7 +289,7 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {languages.map((lang, index) => (
               <motion.div
                 key={lang.name}
@@ -321,27 +298,12 @@ export default function App() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 whileHover={{ y: -5 }}
-                className="group relative overflow-hidden rounded-xl bg-slate-800 border border-gray-700 p-6 shadow-lg transition-all hover:shadow-xl hover:border-purple-500/40"
+                className="group relative overflow-hidden rounded-xl bg-slate-800 border border-gray-700 p-5 shadow-lg transition-all hover:shadow-xl hover:border-purple-500/40"
               >
                 <div className={`absolute -right-8 -top-8 h-24 w-24 rounded-full ${lang.color} opacity-20 transition-all group-hover:scale-150`} />
-                
-                <div className="relative">
-                  <div className="mb-3 flex items-center justify-between">
-                    <h4 className="font-semibold text-white">{lang.name}</h4>
-                    <span className={`h-3 w-3 rounded-full ${lang.color} shadow-lg`} />
-                  </div>
-                  
-                  <div className="relative h-2 overflow-hidden rounded-full bg-gray-700">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${lang.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: index * 0.05 + 0.2 }}
-                      className={`h-full rounded-full ${lang.color} shadow-lg`}
-                    />
-                  </div>
-                  
-                  <p className="mt-2 text-sm text-gray-400">{lang.level}% Dominio</p>
+                <div className="relative flex items-center gap-3">
+                  <span className={`h-3 w-3 rounded-full ${lang.color} shadow-lg flex-shrink-0`} />
+                  <h4 className="font-semibold text-white text-sm">{lang.name}</h4>
                 </div>
               </motion.div>
             ))}
@@ -373,8 +335,7 @@ export default function App() {
             </h2>
             
             <p className="mx-auto max-w-2xl text-gray-400">
-              Explora una colección de proyectos innovadores que combinan diseño moderno,
-              funcionalidad excepcional y las últimas tecnologías web.
+              Explora la colección de proyectos que he desarrollado durante mi formacion academica.
             </p>
           </motion.div>
         </div>
@@ -442,13 +403,17 @@ export default function App() {
               <span className="text-sm text-gray-400">Sígueme en:</span>
               <div className="flex gap-3">
                 <a
-                  href="#"
+                  href="https://github.com/ambar111"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-full bg-gradient-to-br from-purple-500 to-purple-600 p-2 text-white transition-transform hover:scale-110 shadow-lg shadow-purple-500/50"
                 >
                   <Github className="h-4 w-4" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/ámbar-lucía-tiburcio-ynoa-559281291/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-full bg-gradient-to-br from-green-500 to-green-600 p-2 text-white transition-transform hover:scale-110 shadow-lg shadow-green-500/50"
                 >
                   <Linkedin className="h-4 w-4" />
@@ -458,7 +423,7 @@ export default function App() {
           </div>
           <div className="mt-8 border-t border-purple-500/20 pt-6 text-center">
             <p className="text-sm text-gray-500">
-              © 2025 Frontend Developer Portfolio. Diseñado con pasión.
+              © 2025 Ámbar Lucía Tiburcio Ynoa. Diseñado con pasión.
             </p>
           </div>
         </div>

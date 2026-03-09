@@ -8,6 +8,8 @@ interface ProjectCardProps {
   category: string;
   technologies: string[];
   gradient: string;
+  figmaLink?: string;
+  githubLink?: string;
 }
 
 export function ProjectCard({
@@ -17,6 +19,8 @@ export function ProjectCard({
   category,
   technologies,
   gradient,
+  figmaLink,
+  githubLink,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -37,16 +41,29 @@ export function ProjectCard({
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         {/* Overlay on hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <div className="absolute bottom-4 left-4 right-4 flex gap-3">
-            <button className="flex items-center gap-2 rounded-lg bg-white/95 px-4 py-2 backdrop-blur-sm transition-all hover:bg-white hover:shadow-lg">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+        <div className="absolute bottom-4 left-4 right-4 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          {figmaLink && (
+            <a
+              href={figmaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-lg bg-white/95 px-4 py-2 backdrop-blur-sm transition-all hover:bg-white hover:shadow-lg"
+            >
               <ExternalLink className="h-4 w-4 text-gray-900" />
               <span className="text-sm text-gray-900">Ver Proyecto</span>
-            </button>
-            <button className="flex items-center justify-center rounded-lg bg-white/95 p-2 backdrop-blur-sm transition-all hover:bg-white hover:shadow-lg">
+            </a>
+          )}
+          {githubLink && (
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center rounded-lg bg-white/95 p-2 backdrop-blur-sm transition-all hover:bg-white hover:shadow-lg"
+            >
               <Github className="h-4 w-4 text-gray-900" />
-            </button>
-          </div>
+            </a>
+          )}
         </div>
       </div>
 
