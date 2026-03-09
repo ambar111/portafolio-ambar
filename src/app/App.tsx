@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { ProjectCard } from "@/app/components/ProjectCard";
+import { ProjectCard } from "./components/ProjectCard";
 import { Code2, Sparkles, Palette, Mail, Github, Linkedin, Award, Zap, Users, Target } from "lucide-react";
 
 const categories = ["Todos", "Web Apps", "E-commerce", "Mobile", "Dashboards"];
